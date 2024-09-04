@@ -64,7 +64,17 @@ body {
     font-weight: 500;
 }
 
-.container__text__title {
+.container__text__link {
+    display: inline;
+    width: fit-content;
+    text-decoration: none;
+    color: #111111;
+    &:hover {
+        color: #f4d04e;
+    }
+}
+
+.container__text__link__title {
     font-size: 1.5rem;
     font-weight: 800;
 }
