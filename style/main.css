@@ -39,6 +39,7 @@ body {
 
 .container__figure__img {
     display: flex;
+    max-width: 100%;
     justify-content: center;
     border-radius: 0.625rem;
 }
@@ -100,12 +101,12 @@ body {
     font-weight: 800;
 }
 
-.attribution {
+.container__attribution {
     font-size: 0.7rem;
     text-align: center;
 }
 
-.attribution a {
+.container__attribution a {
     text-decoration: none;
     color: #f4d04e;
     font-weight: 700;
@@ -113,5 +114,35 @@ body {
     &:hover {
         text-decoration: underline;
         color: #f4544e;
+    }
+}
+
+@media (max-width: 380px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .container__text__tag {
+        font-size: 3vw;
+    }
+
+    .container__text__link__title {
+        font-size: 5vw;
+    }
+
+    .container__text__description {
+        font-size: 3.4vw;
+    }
+
+    .container__user__img {
+        width: 6vw;
+    }
+
+    .container__user__name {
+        font-size: 3vw;
+    }
+
+    .container__attribution {
+        font-size: 2.5vw;
     }
 }
